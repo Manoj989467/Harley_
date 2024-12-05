@@ -1,0 +1,14 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 5.767 s <<< FAILURE! - in TestSuite
+testRunner.TestRunnerClass.runScenario["Validate login attempts and account blocking behavior", "Harley Enterprise : API Login Testing"](1)  Time elapsed: 3.191 s  <<< FAILURE!
+java.lang.AssertionError: verify Msg expected [Your OTP has expired, Please try again] but found [Your account has been blocked for 15 minutes. Please try after 15 minutes ]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at stepDefinition.Tc2_External_Login_Otp.the_response_status_for_invalid_otp_should_be_with_message_error_description_and_error_code(Tc2_External_Login_Otp.java:667)
+	at ✽.the response status for Invalid otp should be 200 with message "Your account has been blocked for 15 minutes. Please try after 15 minutes ", errorDescription "Unable to process Your Request" and errorCode 1003(file:///C:/Users/Welcome/eclipse-workspace/Harley_Project/src/test/resources/Features/External_Login_Otp.feature:241)
+

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-12-04T16:21:10 IST" name="TestSuite" finished-at="2024-12-04T16:21:16 IST" duration-ms="5232">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestRunnerClass@139982de]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2024-12-04T16:21:10 IST" name="HarleyTest" finished-at="2024-12-04T16:21:16 IST" duration-ms="5232">
+      <class name="testRunner.TestRunnerClass">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:testRunner.TestRunnerClass@139982de]" started-at="2024-12-04T16:21:10 IST" name="setUpClass" finished-at="2024-12-04T16:21:11 IST" duration-ms="549" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@7b10472e]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestRunnerClass@139982de]" started-at="2024-12-04T16:21:11 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-12-04T16:21:14 IST" duration-ms="3189" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate login attempts and account blocking behavior"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Harley Enterprise : API Login Testing"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[verify Msg expected [Your OTP has expired, Please try again] but found [Your account has been blocked for 15 minutes. Please try after 15 minutes ]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: verify Msg expected [Your OTP has expired, Please try again] but found [Your account has been blocked for 15 minutes. Please try after 15 minutes ]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at stepDefinition.Tc2_External_Login_Otp.the_response_status_for_invalid_otp_should_be_with_message_error_description_and_error_code(Tc2_External_Login_Otp.java:667)
+at ✽.the response status for Invalid otp should be 200 with message "Your account has been blocked for 15 minutes. Please try after 15 minutes ", errorDescription "Unable to process Your Request" and errorCode 1003(file:///C:/Users/Welcome/eclipse-workspace/Harley_Project/src/test/resources/Features/External_Login_Otp.feature:241)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:testRunner.TestRunnerClass@139982de]" started-at="2024-12-04T16:21:14 IST" name="tearDownClass" finished-at="2024-12-04T16:21:16 IST" duration-ms="1459" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- testRunner.TestRunnerClass -->
+    </test> <!-- HarleyTest -->
+  </suite> <!-- TestSuite -->
+</testng-results>
