@@ -5,8 +5,7 @@ import io.cucumber.testng.CucumberOptions;
 
 @CucumberOptions(dryRun = false, monochrome = true, plugin = {
 		"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:" }, glue = {
-				"stepDefinition" }, features = {
-						"src/test/resources/Features/External_Login_Otp.feature"},tags = "@Invalid_Otp_Block")
+				"stepDefinition" }, features ="src/test/resources/Features/Login.feature")
 						//tags="@SpaceinbtwNickname")
 				//tags ="@ValidVinId or @InValidVinId or @InvalidNickname or @BlankVinId or @specialcharVinId or @SpecialcharNickname or @SpaceinbtwNickname or @InvalidCustomerIdentifier or @SpecialCharCustomerIdentifier or @BlankIdentifier or @InvalidToken or @BlankToken or @InvalidUrl or @BlankRequestBody")
 						
